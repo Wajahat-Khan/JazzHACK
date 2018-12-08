@@ -96,7 +96,7 @@ public class StatsActivity extends AppCompatActivity {
                 if(device.getName().equals("HC-05"))
                 {
                     mmDevice = device;
-                    Toast.makeText(this, "yoyoyoyo", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "yoyoyoyo", Toast.LENGTH_SHORT).show();
                     break;
                 }
             }
@@ -115,7 +115,8 @@ public class StatsActivity extends AppCompatActivity {
 
             beginListenForData();
         }
-        Toast.makeText(this, "bluetooth opened", Toast.LENGTH_SHORT).show();;
+        Toast.makeText(this, "Data Captured ", Toast.LENGTH_SHORT).show();
+
     }
 
     void beginListenForData() throws UnsupportedEncodingException {
@@ -123,7 +124,7 @@ public class StatsActivity extends AppCompatActivity {
         stopWorker = false;
         readBufferPosition = 0;
         boolean g=false;
-        readBuffer = new byte[1000024];
+        readBuffer = new byte[1024];
         workerThread = new Thread(new Runnable()
         {
             public void run()
@@ -158,11 +159,6 @@ public class StatsActivity extends AppCompatActivity {
         });
 
         workerThread.start();
-        String abc=new String(readBuffer, "UTF-8");
-        for(int i=0;i<readBuffer.length;i++) {
-            Byte b = readBuffer[i];
-            tt.setText(b.toString());
-        }
     }
 
     void closeBT() throws IOException
