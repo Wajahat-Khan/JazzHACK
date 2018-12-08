@@ -56,7 +56,7 @@ public class StatsActivity extends AppCompatActivity {
         Toast.makeText(this, race, Toast.LENGTH_SHORT).show();
         Toast.makeText(this, Boolean.toString(heart_disease), Toast.LENGTH_SHORT).show();
    */
-        tt=findViewById(R.id.blue);
+
         blu_btn = findViewById(R.id.bluetooth_btn);
         blu_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +67,7 @@ public class StatsActivity extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+
             }
 
         });
@@ -101,7 +102,7 @@ public class StatsActivity extends AppCompatActivity {
                 }
             }
         }
-        Toast.makeText(this, "Bluetooth Device Found", Toast.LENGTH_SHORT).show();
+       //Toast.makeText(this, "Bluetooth Device Found", Toast.LENGTH_SHORT).show();
     }
 
     void openBT() throws IOException
