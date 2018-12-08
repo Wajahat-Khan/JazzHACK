@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".StatsActivity"/>
+        <activity android:name=".GetInfo"/>
     </application>
 
 </manifest>

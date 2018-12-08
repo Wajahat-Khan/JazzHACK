@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         get_info=findViewById(R.id.get_info);
-        final Intent intent=new Intent(this, StatsActivity.class);
+        final Intent intent=new Intent(this, GetInfo.class);
         get_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
