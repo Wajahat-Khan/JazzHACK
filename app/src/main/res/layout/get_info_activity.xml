@@ -19,7 +19,7 @@
         android:textStyle="bold"
         android:textColor="#D81B60"
         android:fontFamily="sans-serif"
-        android:textSize="20dp"
+        android:textSize="30sp"
         android:text="INFORMATION"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:text="Heart Disease"
+        android:text="Ovulation"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/heart_yes"
         app:layout_constraintStart_toStartOf="parent" />
